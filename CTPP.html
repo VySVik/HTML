@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="..\imgPasteles\ico.ico" type="image/x-icon">
+    <title>PAG</title>
+</head>
+<style>
+    /*color: #783f04;*/
+
+    * {
+        background-color: #783f04;
+        color: aliceblue;
+    }
+
+    body {
+        background-image: image("C:\Users\vysvi\Documents\VySVik\XL\FrontEnd\HTML\imgPasteles\fondo.jpg")
+    }
+
+    .texto {
+        font-style: italic;
+        font-weight: 400;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .Titulo {
+        color: chartreuse;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+    }
+
+    .menu {
+        font-size: medium;
+        color: chartreuse;
+        font-style: normal;
+        font-style: inherit;
+        text-align: right;
+    }
+
+    header {
+        text-align: right;
+    }
+</style>
+
+<header>
+    <section class="Seccion-titulo">
+        <h1 class="Titulo">Pastelería Artesanal Genérica</h1>
+    </section>
+    <nav>
+        <a class="menu" href="Inicio.html">Inicio</a>
+        <a class="menu" href="Menu.html">Menu</a>
+        <a class="menu" href="CTPP.html">CTPP</a>
+        <a class="menu" href="Nosotros.html">Nosotros</a>
+        <a class="menu" href="Login.html">Login</a>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <div><!----Div principal-->
+            <div><!--sseccion titulo CTPP-->
+                <p>Crea tu propio pastel</p>
+            </div>
+
+            <div><!--Caracteristicas-->
+                <p>Caracteristicas</p>
+                <p>Elige el sabbor, color, forma y tamaño de tu pastel</p>
+                <div><!----Div sabor color forma tamaño-->
+                    <div>
+                        <p>Elige el sabor</p>
+                        <form action="" id="Sabores">
+                            <input type="checkbox" id="chkbox1">
+                            <label for="chkbox1">Chocolate</label><br>
+                            <input type="checkbox" id="chkbox2">
+                            <label for="chkbox2">Vainilla</label><br>
+                            <input type="checkbox" id="chkbox3">
+                            <label for="chkbox3">Fresa</label><br>
+                            <input type="checkbox" id="chkbox4">
+                            <label for="chkbox4">Moka</label><br>
+                            <input type="checkbox" id="chkbox5">
+                            <label for="chkbox5">Durazno</label><br><br>
+                        </form>
+                    </div>
+
+                    <div>
+                        <p>Elige el color</p>
+                        <form action="" id="Colores">
+                            <input type="checkbox" id="chkbox1">
+                            <label for="chkbox1">Negro</label><br>
+                            <input type="checkbox" id="chkbox2">
+                            <label for="chkbox2">Blanco</label><br>
+                            <input type="checkbox" id="chkbox3">
+                            <label for="chkbox3">Rojo</label><br>
+                            <input type="checkbox" id="chkbox4">
+                            <label for="chkbox4">Cafe</label><br>
+                            <input type="checkbox" id="chkbox5">
+                            <label for="chkbox5">Amarillo</label><br>
+                        </form>
+                    </div>
+
+                    <div>
+                        <p>Elige la forma del pastel</p>
+                        <form>
+                            <input type="radio" id="cubo" name="forma" value="cubo">
+                            <Label for="cubo">Cubo</Label><br>
+                            <input type="radio" id="triangulo" name="forma" value="triangulo">
+                            <Label for="triangulo">Triangulo</Label><br>
+                            <input type="radio" id="esfera" name="forma" value="esfera">
+                            <Label for="esfera">Esfera</Label><br>
+                            <input type="radio" id="toro" name="forma" value="toro">
+                            <Label for="toro">Toro</Label><br>
+                        </form>
+                    </div>
+
+                    <div>
+                        <p>Elige el tamaño del pastel</p>
+                        <form>
+                            <input type="radio" id="chico" name="tamaño" value="chico">
+                            <Label for="chico">Chico</Label><br>
+                            <input type="radio" id="mediano" name="tamaño" value="mediano">
+                            <Label for="mediano">Mediano</Label><br>
+                            <input type="radio" id="grande" name="tamaño" value="grande">
+                            <Label for="grande">Grande</Label><br>
+                            <input type="radio" id="xgrande" name="forma" value="xgrande">
+                            <Label for="xgrande">XGrande</Label><br>
+                        </form>
+                    </div>
+
+                </div><!----fin Div sabor color forma tamaño-->
+            </div> <!--fin Caracteristicas-->
+            
+            <div><!----Segunda div Adornos comment resumen-->
+                <div>
+                    <p>Elige los adornos del pastel</p>
+                    <form action="" id="adornos">
+                        <input type="checkbox" id="adorno1">
+                        <label for="adorno1">adorno1</label><br>
+                        <input type="checkbox" id="adorno2">
+                        <label for="adorno2">adorno2</label><br>
+                        <input type="checkbox" id="adorno3">
+                        <label for="adorno3">adorno3</label><br>
+                        <input type="checkbox" id="adorno4">
+                        <label for="adorno4">adorno4</label><br>
+                        <input type="checkbox" id="adorno5">
+                        <label for="adorno5">adorno5</label><br>
+                    </form>
+                </div>
+                <div>
+                    <p>Indique sus comentarios a nuestro Chef</p>
+                    <label for="comentarios">Recomendaciones particulares</label>
+                    <input type="text" id="comentarios" name="comentarios">
+                </div>
+                <div>
+                    <p>Resumen del pedido</p>
+                    <label for="">Elemento1</label><br>
+                    <label for="">Elemento2</label><br>
+                    <label for="">Elemento3</label><br>
+                    <label for="">Elemento4</label><br>
+                    <label for="">Elemento5</label><br>
+                    <label for="">Elemento6</label><br>
+                    <label for="">Elemento7</label><br><br>  
+                    <label for="">Costo</label>             
+                </div>
+                <div>
+                       
+                </div>
+            </div>
+        </div><!---fin div principal-->
+
+        <div>
+            <!--Asi se veria tu creación-->
+            <img src="C:\Users\vysvi\Documents\VySVik\XL\FrontEnd\HTML\imgPasteles\Inicio0.jpg"
+                alt="asi se ve tu creación">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <p>Telefono 1234567890</p>
+            </div>
+            <div>
+                <p>mail xxx@xxx.xxx</p>
+            </div>
+            <div>
+                <p>Diercción Lorem ipsum dolor sit amet consectetur0 adipisicing elit.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
